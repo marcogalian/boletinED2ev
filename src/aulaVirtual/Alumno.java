@@ -12,6 +12,11 @@ public class Alumno extends Usuario {
 
     private Map<Asignatura, Integer> notas;
 
+    /**
+     * Constructor heredado de la clase Usuario
+     * @param nombre del alumno
+     * @param email del alumno
+     */
     public Alumno(String nombre, String email) {
         super(nombre, email);
         this.notas = new HashMap<>();
