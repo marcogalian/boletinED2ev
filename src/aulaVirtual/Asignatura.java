@@ -10,7 +10,7 @@ import java.util.List;
 public class Asignatura {
     private String nombre;
     private Profesor profesor;
-    private List<Alumno> alumnos;
+    private ArrayList<Alumno> alumnos;
 
     public Asignatura(String nombre) {
         this.nombre = nombre;
@@ -28,6 +28,14 @@ public class Asignatura {
 
     public void agreagarAlumno(Alumno alumno) {
         alumnos.add(alumno);
+    }
+
+    // Funcion Ejercicio 1 imprime todos los alumnos segun asignatura
+    public void getAlumnos() {
+        for (Alumno alumno : this.alumnos) {
+            System.out.println("Nombre: " + alumno.getNombre() + "\n" +
+            "Email: " + alumno.getEmail());
+        }
     }
 
     public void eliminarAlumno(Alumno alumno) {

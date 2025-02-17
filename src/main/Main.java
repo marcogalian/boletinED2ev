@@ -4,6 +4,8 @@ import aulaVirtual.Alumno;
 import aulaVirtual.Asignatura;
 import aulaVirtual.Profesor;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -32,5 +34,23 @@ public class Main {
         // Mostrar notas de los alumnos
         alumno1.mostrarNotas();
         alumno2.mostrarNotas();
+
+        // Agregar alumnos
+        matematicas.agreagarAlumno(alumno1);
+        matematicas.agreagarAlumno(alumno2);
+        programacion.agreagarAlumno(alumno2);
+
+        // Imprimir alumnos
+        System.out.println();
+        System.out.println("Alumnos de Matematicas: ");
+        matematicas.getAlumnos(); // Llama al método sin almacenar el retorno
+
+        System.out.println();
+        System.out.println("Alumnos de Programacion: ");
+        programacion.getAlumnos();
+
+
+
+
     }
 }
