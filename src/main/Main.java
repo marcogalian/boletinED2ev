@@ -36,19 +36,18 @@ public class Main {
         alumno2.mostrarNotas();
 
         // Agregar alumnos
-        matematicas.agreagarAlumno(alumno1);
-        matematicas.agreagarAlumno(alumno2);
-        programacion.agreagarAlumno(alumno2);
+        matematicas.agregarAlumno(alumno1);
+        matematicas.agregarAlumno(alumno2);
+        programacion.agregarAlumno(alumno2);
 
         // Imprimir alumnos
         System.out.println();
         System.out.println("Alumnos de Matematicas: ");
-        matematicas.getAlumnos(); // Llama al método sin almacenar el retorno
+        System.out.println(matematicas.getAlumnos());
 
         System.out.println();
         System.out.println("Alumnos de Programacion: ");
-        programacion.getAlumnos();
-
+        System.out.println(programacion.getAlumnos());
 
 
 
