@@ -43,11 +43,12 @@ public class Main {
         // Imprimir alumnos
         System.out.println();
         System.out.println("Alumnos de Matematicas: ");
-        System.out.println(matematicas.getAlumnos());
+        matematicas.getAlumnos(); // Llama al método sin almacenar el retorno
 
         System.out.println();
         System.out.println("Alumnos de Programacion: ");
-        System.out.println(programacion.getAlumnos());
+        programacion.getAlumnos();
+
 
 
 
